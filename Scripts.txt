@@ -1,0 +1,13 @@
+create table Users(
+userid serial primary key,
+username varchar(255),
+email varchar(255),
+password varchar(20)
+);
+
+create table Videos(
+videoid serial primary key,
+originalname varchar(255),
+videofile bytea not null,
+filepath varchar(255)
+);
